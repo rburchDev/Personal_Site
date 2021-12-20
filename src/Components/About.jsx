@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import "./Style/Component.css";
 import SkillBar from 'react-skillbars';
-import {SkillsL, SkillsT} from './Data/Skills'
+import { SkillsL, SkillsT } from './Data/Skills'
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
@@ -77,7 +77,7 @@ function About() {
     }
 
     return (
-        <>
+        <div className='Root'>
             <div className="aboutHeader">
                 <h1>
                     <span>
@@ -86,14 +86,61 @@ function About() {
                 </h1>
             </div>
             <div className='aboutContainer'>
+                <div>
+                    <h3>
+                        Description
+                    </h3>
+                    <div className="aboutContent">
+                        <p>
+                            Hello! My name is Ryan Burch and I enjoy solving complicated issues that require developing new programs. This passion has fortunately grown into a career.
+                        </p>
+                        <p>
+                            I am currently employed by Dish Network on the Dish Business QA team as a QA Software Engineer. My current projects include but are not limited to:
+                        </p>
+                        <ul>
+                            <li>
+                                Live Video Anomaly Detection using Surprised Machine Learning and OpenCV
+                            </li>
+                            <li>
+                                Building and Maintaining a Custom QA Dashboard built with ReactJS and Python
+                            </li>
+                            <li>
+                                Building Data Collectors and Automated Test for our Linux Caching Server
+                            </li>
+                            <li>
+                                Building Automated Test for our Android TV Set-Top-Box
+                            </li>
+                        </ul>
+                        <p>
+                            Within each of those projects I am able to use a multitude of technologies. Those current technologies include:
+                        </p>
+                        <ul>
+                            <li>
+                                Python
+                            </li>
+                            <li>
+                                ReactJS
+                            </li>
+                            <li>
+                                Shell Script
+                            </li>
+                            <li>
+                                Nginx
+                            </li>
+                        </ul>
+                        <p>
+                            Outside of work I enjoy being outdoors with my wife and dog. We mostly enjoy hiking and backpacking. I also enjoy running, skiing and racing my dirt bike.
+                        </p>
+                    </div>
+                </div>
                 <span className="skillBar" onClick={(e) => handleClick(e.target.innerText)}>
-                <h3>
-                    Languages
-                </h3>
+                    <h3>
+                        Languages
+                    </h3>
                     <SkillBar skills={SkillsL} animationDelay={1000} animationDuration={3000} />
-                <h3>
-                    Tools
-                </h3>
+                    <h3>
+                        Tools
+                    </h3>
                     <SkillBar skills={SkillsT} animationDelay={3000} animationDuration={3000} />
                 </span>
                 <Dialog
@@ -138,50 +185,8 @@ function About() {
                         </Button>
                     </DialogActions>
                 </Dialog>
-                <div className="aboutContent">
-                    <p>
-                        Hello! My name is Ryan Burch and I enjoy solving complicated issues that require developing new programs. This passion has fortunately grown into a career.
-                    </p>
-                    <p>
-                        I am currently employed by Dish Network on the Dish Business QA team as a QA Software Engineer. My current projects include but are not limited to:
-                    </p>
-                    <ul>
-                        <li>
-                            Live Video Anomaly Detection using Surprised Machine Learning and OpenCV
-                        </li>
-                        <li>
-                            Building and Maintaining a Custom QA Dashboard built with ReactJS and Python
-                        </li>
-                        <li>
-                            Building Data Collectors and Automated Test for our Linux Caching Server
-                        </li>
-                        <li>
-                            Building Automated Test for our Android TV Set-Top-Box
-                        </li>
-                    </ul>
-                    <p>
-                        Within each of those projects I am able to use a multitude of technologies. Those current technologies include:
-                    </p>
-                    <ul>
-                        <li>
-                            Python
-                        </li>
-                        <li>
-                            ReactJS
-                        </li>
-                        <li>
-                            Shell Script
-                        </li>
-                        <li>
-                            Nginx
-                        </li>
-                    </ul>
-                    <p>
-                        Outside of work I enjoy being outdoors with my wife and dog. We mostly enjoy hiking and backpacking. I also enjoy running, skiing and racing my dirt bike.
-                    </p>
-                </div>
             </div>
-        </>
+        </div>
     );
 }
 

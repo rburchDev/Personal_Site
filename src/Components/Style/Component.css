@@ -3,6 +3,7 @@
 .Root {
     overflow: hidden;
     position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .Profile {
@@ -185,8 +186,14 @@ h1:after {
 .aboutContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 50px;
     width: 100vw;
+}
+
+.aboutContainer h3 {
+    margin-top: 0px;
+    font-weight: normal;
+    position: relative;
 }
 
 .aboutContent {
@@ -200,7 +207,6 @@ h1:after {
 }
 
 .aboutContent p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
@@ -222,6 +228,7 @@ h1:after {
 }
 
 .skillBar h3 {
+    font-weight: normal;
     margin-top: 0px;
 }
 

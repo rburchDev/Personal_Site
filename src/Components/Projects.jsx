@@ -105,10 +105,16 @@ const Projects = () => {
                                     Numpy
                                 </li>
                                 <li>
-                                    paramiko
+                                    Paramiko
                                 </li>
                                 <li>
                                     Thread
+                                </li>
+                                <li>
+                                    Socket
+                                </li>
+                                <li>
+                                    Logging
                                 </li>
                             </ul>
                         </div>
@@ -160,6 +166,15 @@ const Projects = () => {
                                 <li>
                                     Material-UI
                                 </li>
+                                <li>
+                                    Flask
+                                </li>
+                                <li>
+                                    Gunicorn
+                                </li>
+                                <li>
+                                    Nginx
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -193,7 +208,7 @@ const Projects = () => {
                     })}>
                         <div className="container">
                             <h3><b>Libraries</b></h3>
-                            <p>Language: Python</p>
+                            <p>Language: Python and Shell Scripts</p>
                             <ul>
                                 <li>
                                     Pandas
@@ -206,6 +221,9 @@ const Projects = () => {
                                 </li>
                                 <li>
                                     Selenium
+                                </li>
+                                <li>
+                                    Logging
                                 </li>
                             </ul>
                         </div>
