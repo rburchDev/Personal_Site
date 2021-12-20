@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&display=swap');
+
+.Root {
+    overflow: hidden;
+    position: relative;
+}
+
+.Profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+.Profile img{
+    border-radius: "50%";
+}
+
+.info-Bar {
+    width: 18%;
+    height: 100vh;
+    margin: 0px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+}
+.info-Bar p {
+    font-size: 25px;
+}
+
+.info-List {
+    width: 100%;
+    font-size: 30px;
+}
+
+.info-List ul {
+    display: inline-block;
+    list-style: none;
+    width: 100%;
+    margin: 0px;
+    margin-top: 30px;
+}
+
+.info-List li {
+    float: left;
+    justify-content: space-evenly;
+    padding: 10px 25px;
+}
+
+.info-List a {
+    color: white;
+}
+
+.info-List a:hover {
+    color: gray
+}
+
+.info-List-text {
+    font-size: 20px;
+}
+
+.info-List-text ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+    margin: 0px;
+}
+
+.info-List-text li {
+    color: white;
+}
+
+.info-List-text li:hover {
+    color: gray
+}
+
+.card {
+  background-color: #41414F;
+  border: 1px solid #bacdd8;
+  padding: 8px;
+  border-radius: 12px;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  height: 90%;
+  opacity: .8;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: fill;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 gray;
+  }
+  
+.container {
+    margin: 0 auto;
+}
+
+.container h3 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-size: 20px;
+}
+
+.container p {
+    align-items: left;
+    justify-content: left;
+    display: flex;
+    color: white;
+    font-size: 15px;
+}
+
+.container ul {
+    align-items: left;
+    justify-content: left;
+    color: silver;
+    font-size: 15px;
+}
+
+.title h1 {
+    position: relative;
+    font-family: Calibri, "Helvetica", san-serif;
+    line-height: 1.5em;
+    justify-content: left;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 45px;
+}
+
+.content {
+    display: flex;
+}
+
+.mainContent {
+    width: 82%;
+    height: 100vh;
+    margin: 0px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0px;
+    flex-direction: column;
+    float: right;
+}
+
+.mainContent p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 60px;
+}
+
+.aboutHeader {
+    position: relative;
+    font-family: Calibri, "Helvetica", san-serif;
+    line-height: 1.5em;
+    font-size: 20px;
+}
+h1:after {
+    position: relative;
+    content:' ';
+    display:block;
+    border:2px solid #d0d0d0;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.aboutContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    width: 100vw;
+}
+
+.aboutContent {
+    border: 1px solid #bacdd8;
+    padding: 8px;
+    border-radius: 12px;
+    height: 80%;
+    margin-left: auto;
+    flex-direction: column;
+    position: relative;
+}
+
+.aboutContent p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.aboutContent ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-left: 100px;
+    font-size: 15px;
+}
+
+.skillBar {
+    position: relative;
+    flex-direction: column;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 3px;
+    transition: width 5000ms ease-in-out 0s;
+}
+
+.skillBar h3 {
+    margin-top: 0px;
+}
+
+.skillBar span:hover {
+    color: gray
+}
