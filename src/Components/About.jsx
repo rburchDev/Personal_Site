@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import "./Style/Component.css";
 import SkillBar from 'react-skillbars';
 import { SkillsL, SkillsT } from './Data/Skills'
@@ -8,6 +8,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Button from '@mui/material/Button';
+import { useNav } from '../customHooks/useNav';
 
 function About() {
     const [open, setOpen] = useState(false);
@@ -46,7 +47,7 @@ function About() {
             setOpen(true);
             setText('I have built Shell Scripts which collect data from systems I am performing test on. I feel comfortable with Shell Scripts, but I am no expert. I write Shell Scripts at least once a month.')
         }
-        if (param === 'JaveScript') {
+        if (param === 'JavaScript') {
             setOpen(true);
             setText('I have used JaveScript in the websites I have built with ReactJS (Obviously...). I also help debug a product which is written in JaveScript. I use JaveScript weekly, either in the form of programming or debugging.')
         }
@@ -76,8 +77,10 @@ function About() {
         }
     }
 
+    const aboutRef = useNav('About');
+
     return (
-        <div className='Root'>
+        <section className='Root' ref={aboutRef} id='aboutContainer'>
             <div className="aboutHeader">
                 <h1>
                     <span>
@@ -108,7 +111,7 @@ function About() {
                                 Building Data Collectors and Automated Test for our Linux Caching Server
                             </li>
                             <li>
-                                Building Automated Test for our Android TV Set-Top-Box
+                                Building Automated Test for our Android TV Set-Top-Box and Hopper Set-Top-Box's
                             </li>
                         </ul>
                         <p>
@@ -133,7 +136,7 @@ function About() {
                         </p>
                     </div>
                 </div>
-                <span className="skillBar" onClick={(e) => handleClick(e.target.innerText)}>
+                <span onClick={(e) => handleClick(e.target.innerText)} >
                     <h3>
                         Languages
                     </h3>
@@ -186,7 +189,7 @@ function About() {
                     </DialogActions>
                 </Dialog>
             </div>
-        </div>
+        </section>
     );
 }
 

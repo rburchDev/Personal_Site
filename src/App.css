@@ -6,7 +6,9 @@
 html, body {
   height: 100%;
   width: 100%;
+  overflow: auto;
   overflow-x: hidden;
+  overflow-y: scroll;
   margin: 0;
 }
 
@@ -21,28 +23,6 @@ html, body {
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.Nav-ul {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  color: white;
-  justify-content: space-evenly;
-  width: 100vw;
-  list-style-type: none;
-  height: 5vh;
-}
-
-.Nav-ul a {
-  color: white;
-}
-
-.Nav-ul a:hover {
-  color: gray
 }
 
 .App-link {
